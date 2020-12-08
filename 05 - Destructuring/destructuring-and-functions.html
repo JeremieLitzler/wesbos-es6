@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Destructuring in Action!</title>
 </head>
+
 <body>
-<script>
-  function convertCurrency(amount) {
-    const converted = {
-      USD: amount * 0.76,
-      GPB: amount * 0.53,
-      AUD: amount * 1.01,
-      MEX: amount * 13.30
-    };
-    return converted;
-  }
+  <script>
+    /*
+     * function returning an object...
+     */
+    function convertCurrency(amount) {
+      const converted = {
+        USD: amount * 0.76,
+        GPB: amount * 0.53,
+        AUD: amount * 1.01,
+        MEX: amount * 13.30
+      };
+      return converted;
+    }
 
-  function tipCalc({ total = 100, tip = 0.15, tax = 0.13 } = {}) {
-    return total + (tip * total) + (tax * total);
-  }
+    //... and pick whatever you want !
+    const {
+      USD,
+      GPB
+    } = convertCurrency(100);
+    console.log(USD, GPB);
 
-  const bill = tipCalc({ tip: 0.20, total: 200 });
-  console.log(bill);
+    function tipCalc({
+        total = 100,
+        tip = 0.15,
+        tax = 0.13
+      } = {} //default object when tipCalc receives nothing otherwise a NullRef is thrown
+    ) {
+      return total + (tip * total) + (tax * total);
+    }
 
-</script>
+    const bill = tipCalc({
+      tip: 0.20,
+      total: 200
+    });
+    console.log(bill); //logs 266
+    const bill2 = tipCalc({
+      tip: 0.20,
+      total1: 200
+    });
+    console.log(bill2); //logs 133 because total1 doesn't match the destructuring!
+  </script>
 </body>
+
 </html>
