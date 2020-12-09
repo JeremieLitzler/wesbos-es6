@@ -2,11 +2,17 @@
   "env": {
     "es6": true,
     "browser": true
+    //"node": true //to enable node
+    //"jquery": true //to enable jquery to use $
   },
+  //use the recommended rules (is a preset)
+  //"extends": "eslint:recommended",
+  //use the airbnb rules (is a preset) which are more strict than eslint:recommended
+  //see: https://www.npmjs.com/package/eslint-config-airbnb
   "extends": "airbnb",
   "rules": {
-    "no-console": 0,
-    "no-unused-vars": 1
-  },
-  "plugins": ["html", "markdown"]
+     "no-console": 0,
+     "no-unused-vars": 1
+  }
+  //"plugins": ["html", "markdown"]
 }
