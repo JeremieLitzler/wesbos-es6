@@ -62,3 +62,4 @@ We can force eslint with a git hook.
 
 - Open the folder .git/hooks in your repository:
   - From Terminal in Visual Code: `code -n .git/hooks` ([thanks to Kronos on Stackoverlow](https://stackoverflow.com/a/44240219/13446264))
+  - Modify the commit-msg.sample by renaming it `commit-msg` and paste the content of `12 - Code Quality with ESLint/commit-msg.txt` into it.
