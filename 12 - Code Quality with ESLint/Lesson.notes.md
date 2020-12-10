@@ -49,3 +49,16 @@ You can do it through comment like this:
 - To disable on a file, set the disable comment at the top.
 - To disable on a line, set the disable comment just before the target line.
 - **Don't forget to re-enable eslint with `/* eslint-enable */`.**
+
+## Using ESLint in other files than `.js`
+
+[See this repo](https://github.com/dustinspecker/awesome-eslint).
+
+You need to install the plugin(s) you need and use theme with `"plugins": ["html", "markdown"]` in the `.eslintrc` file.
+
+## Forcing code quality on push to a repo
+
+We can force eslint with a git hook.
+
+- Open the folder .git/hooks in your repository:
+  - From Terminal in Visual Code: `code -n .git/hooks` ([thanks to Kronos on Stackoverlow](https://stackoverflow.com/a/44240219/13446264))
