@@ -16,7 +16,7 @@ Promise.all([weather, tweets]).then((responses) => {
   console.log(weatherInfo, tweetInfo);
 });
 
-let postsPromise = fetch('http://wesbos.com/wp-json/wp/v2/posts');
+const postsPromise = fetch('http://wesbos.com/wp-json/wp/v2/posts');
 const streetCarsPromise = fetch(
   'http://data.ratp.fr/api/datasets/1.0/search/?q=paris',
 );
