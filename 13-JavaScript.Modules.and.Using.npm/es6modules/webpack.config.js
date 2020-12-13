@@ -4,37 +4,35 @@ const nodeEnv = process.env.NODE_ENV || 'production';
 module.exports = {
   devtool: 'source-map',
   entry: {
-    filename: './app.js',
+    filename: './app.js'
   },
   output: {
-    filename: '_build/bundle.js',
+    filename: '_build/bundle.js'
   },
   module: {
-    loaders: [
+    loaders: [//define to handle 
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
+        test: /\.js$/,//is it a a JS file?
+        exclude: /node_modules/,//what should I exclude?
+        loader: 'babel-loader',//which loader will we need to run the file against to?
         query: {
-          presets: ['es2015-native-modules'],
-        },
-      },
-    ],
+          presets: ['es2015-native-modules']//how to run the loader
+        }
+      }
+    ]
   },
   plugins: [
-    //This is obsolete!
-    //See: https://gist.github.com/sokra/1522d586b8e5c0f5072d7565c2bee693
-    /*new webpack.optimize.UglifyJsPlugin({
+    new webpack.optimize.UglifyJsPlugin({//compress the JS
       compress: {
-        warnings: false,
+        warnings: false
       },
       output: {
-        comments: false,
+        comments: false
       },
-      sourceMap: true,
-    }),*/
-    new webpack.DefinePlugin({
-      'process.env': { NODE_ENV: JSON.stringify(nodeEnv) },
+      sourceMap: true
     }),
-  ],
+    new webpack.DefinePlugin({
+      'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }
+    })
+  ]
 };
