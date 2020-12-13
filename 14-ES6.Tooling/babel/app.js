@@ -1,6 +1,6 @@
-const { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
+const { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4, c: 6 };
 
 const age = 100;
 const people = ['Wes', 'Kait'];
 
-const fullNames = people.map(name => `${name} Bos`);
+const fullNames = people.map((name) => `${name} Bos`);
