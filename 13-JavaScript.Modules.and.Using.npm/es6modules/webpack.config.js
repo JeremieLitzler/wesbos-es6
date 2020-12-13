@@ -4,7 +4,7 @@ const nodeEnv = process.env.NODE_ENV || 'production';
 module.exports = {
   devtool: 'source-map',
   entry: {
-    filename: './app.js'
+    filename: './src/app.js'
   },
   output: {
     filename: '_build/bundle.js'
@@ -27,9 +27,9 @@ module.exports = {
         warnings: false
       },
       output: {
-        comments: false
+        comments: false//remove the comments
       },
-      sourceMap: true
+      sourceMap: true//create a source map to allow easy debugging
     }),
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }

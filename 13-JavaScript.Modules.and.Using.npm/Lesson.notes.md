@@ -8,3 +8,24 @@ Here is what I learned or was reminded of:
 
 - `--save` is to save a dependency that the app uses.
 - `--save-dev` is to save a dependency that is a tool for the project.
+
+## Exporting custom modules
+
+Using `export default myModule` allows us to name it whatever we want when we import the module.
+
+```js
+import myAwesomeModule from './src/myModule';
+```
+
+However, using a named export doesn't allow that.
+
+```js
+//named export
+export const myModule = {};
+```
+
+Therefore the import must be:
+
+```js
+import { myModule } from './src/myModule';
+```
