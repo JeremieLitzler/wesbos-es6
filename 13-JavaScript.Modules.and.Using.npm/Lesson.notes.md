@@ -29,3 +29,8 @@ Therefore the import must be:
 ```js
 import { myModule } from './src/myModule';
 ```
+
+## Don't mix and match export and import
+
+If default export, import with no `{...}`
+If named export, import with `{...}`.
