@@ -9,6 +9,8 @@
 <body>
   <script>
     function ajax(url) {
+      // disable the linting for dataGen.next(data) as it is generator specific!
+      /* eslint-disable no-use-before-define */
       // send the request
       fetch(url)
         // convert the response to json
