@@ -3,11 +3,47 @@
 
 <head>
   <title>Custom Promises</title>
+  <style>
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
+  <video controls class="me"></video>
   <script>
+    fetch('https://api.github.com/users/jeremielitzler')
+      .then((data) => data.json())
+      .then((json) => console.log(json))
+      .catch((err) => {
+        console.error(err);
+      });
 
+    const video = document.querySelector('.me');
+    if (navigator.mediaDevices) {
+      /* eslint-disable indent */
+      navigator.mediaDevices.getUserMedia({
+          video: true,
+        })
+        .then((mediaStream) => {
+          console.log(mediaStream);
+          video.srcObject = mediaStream;
+          video.load();
+          video.play();
+        })
+        .catch((err) => {
+          const errorMsg = document.createElement('p');
+          errorMsg.className = 'error';
+          if (err.name.includes('NotAllowed')) {
+            errorMsg.innerHTML = 'You denied camera access...';
+          } else {
+            errorMsg.innerHTML = `Error ${err.name} occured!`;
+          }
+          document.body.appendChild(errorMsg);
+        });
+    }
   </script>
 </body>
 
