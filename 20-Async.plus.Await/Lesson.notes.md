@@ -12,3 +12,11 @@ The consequence is that you need a function that is promisified to use async and
 ## Error handling
 
 See [example](Async.Await.MINE.html)
+
+## Waiting on multiple promises
+
+See [example](Multiple.Promises.html)
+
+## Promisifying callback based functions
+
+See [example](Promisifying.Functions.html)
