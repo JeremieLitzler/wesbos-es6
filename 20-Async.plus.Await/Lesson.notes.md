@@ -8,3 +8,7 @@ Why Await? In some case, we will need to wait for an asynchronous task to finish
 
 Async and Await are built on top of Promises.
 The consequence is that you need a function that is promisified to use async and await.
+
+## Error handling
+
+See [example](Async.Await.MINE.html)

@@ -23,7 +23,7 @@ for (const [key, val] of dogs) {
 ```
 
 With a map, you can use for the key of a value an object.
-See [the example](19-Maps.and.WeakMaps/maps-metadata.html) where we are storing metadata of the NodeList of button.
+See [the example](maps-metadata.html) where we are storing metadata of the NodeList of button.
 The key remains the same but the value can be anything to extend the object as key.
 
 ## WeakMaps

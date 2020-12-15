@@ -26,12 +26,9 @@
 
     // high order function to catch errors
     function catchErrors(anyFunction) {
-      return function (...args) {
-        return anyFunction(...args)
-          .catch((err) => {
-            console.error(err);
-          });
-      };
+      return (...args) => anyFunction(...args).catch((err) => {
+        console.error(err);
+      });
     }
     async function go(action, what) {
       console.log(`${action} ${what} @${Date.now()}`);
