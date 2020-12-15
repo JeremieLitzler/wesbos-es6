@@ -2,12 +2,48 @@
 <html lang="en">
 
 <head>
-  <title>Custom Promises</title>
+  <title>Async Await</title>
+  <style>
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
-  <script>
 
+  <script>
+    function breathe(amount) {
+      return new Promise((resolve, reject) => {
+        if (Object.is(parseInt(amount, NaN), NaN)) {
+          reject(new Error(`#${amount}# is not a breathing value`));
+        }
+
+        setTimeout(() => resolve(`Breathed for ${amount} ms!`), amount);
+      });
+    }
+
+    // high order function to catch errors
+    function catchErrors(anyFunction) {
+      return function (...args) {
+        return anyFunction(...args)
+          .catch((err) => {
+            console.error(err);
+          });
+      };
+    }
+    async function go(action, what) {
+      console.log(`${action} ${what} @${Date.now()}`);
+      console.log(await breathe(500));
+      console.log(await breathe(200));
+      console.log(await breathe(100));
+      console.log(await breathe('not a number'));
+      console.log(`stop @${Date.now()}`);
+    }
+
+    const failSafe = catchErrors(go);
+    failSafe('launch', 'go');
   </script>
 </body>
 
