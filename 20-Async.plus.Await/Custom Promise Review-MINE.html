@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Custom Promises</title>
+  <style>
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script>
+    function breathe(amount) {
+      return new Promise((resolve, reject) => {
+        if (Object.is(parseInt(amount, NaN), NaN)) {
+          reject(new Error(`${amount} is not a breathing value`));
+        }
+
+        setTimeout(() => resolve(`Breathed for ${amount} ms!`), amount);
+      });
+    }
+
+    breathe(1000)
+      .then((res) => {
+        console.log(res);
+        return breathe(500);
+      })
+      .then((res) => {
+        console.log(res);
+        return breathe(750);
+      })
+      .then((res) => {
+        console.log(res);
+        return breathe('nnn');
+      })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  </script>
+</body>
+
+</html>
