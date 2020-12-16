@@ -10,11 +10,12 @@
 
 `for...of` is the best of the 3 solutions above.
 It can handle pretty much any array, **except objet**.
+To handle object properties, you need to use `Object.keys` or `Object.entries` depending on what you need to be.
 
 ### What about the index of each value
 
 ```js
-const cuts = ["Chuck", "Brisket", "Shank", "Short Rib"];
+const cuts = ['Chuck', 'Brisket', 'Shank', 'Short Rib'];
 for (const [i, cut] of cuts.entries()) {
   console.log(`Index of ${cut} is ${i}`);
 }
