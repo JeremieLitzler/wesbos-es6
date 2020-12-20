@@ -1,5 +1,9 @@
 # Arrow functions & Default arguments
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../01-New.Variables/Lesson.note.md) |
+[View next lesson's notes >](../03-Template.Strings/Lesson.notes.md)
+
 ## Arrow functions
 
 ### Anonymous
@@ -15,16 +19,16 @@ It is not always good to use arrow functions in all situations.
 Using an arrow function here would mean that `this` is scoped to the parent = window!
 
 ```js
-const box = document.querySelector(".box");
-box.addEventListener("click", () => {
+const box = document.querySelector('.box');
+box.addEventListener('click', () => {
   console.log(this); //the window... we don't want that!
   //handle event...
 });
 ```
 
 ```js
-const box = document.querySelector(".box");
-box.addEventListener("click", function () {
+const box = document.querySelector('.box');
+box.addEventListener('click', function () {
   console.log(this); //the box
   //handle event...
 });
@@ -33,10 +37,10 @@ box.addEventListener("click", function () {
 Similarly, using the regular function in the `setTimeout` within the event handler will scope `this` to the window.
 
 ```js
-const box = document.querySelector(".box");
-box.addEventListener("click", function () {
-  let first = "opening";
-  let second = "open";
+const box = document.querySelector('.box');
+box.addEventListener('click', function () {
+  let first = 'opening';
+  let second = 'open';
 
   if (this.classList.contains(first)) {
     [first, second] = [second, first];
@@ -54,10 +58,10 @@ However, `this` inside the `setTimeout` should be the instance of the box variab
 Using an arrow function helps to solve the scope issue.
 
 ```js
-const box = document.querySelector(".box");
-box.addEventListener("click", function () {
-  let first = "opening";
-  let second = "open";
+const box = document.querySelector('.box');
+box.addEventListener('click', function () {
+  let first = 'opening';
+  let second = 'open';
 
   if (this.classList.contains(first)) {
     [first, second] = [second, first];
@@ -74,11 +78,11 @@ box.addEventListener("click", function () {
 Before, we would have done the following:
 
 ```js
-const box = document.querySelector(".box");
-box.addEventListener("click", function () {
+const box = document.querySelector('.box');
+box.addEventListener('click', function () {
   var that = this; //save the box instance...
-  let first = "opening";
-  let second = "open";
+  let first = 'opening';
+  let second = 'open';
 
   if (this.classList.contains(first)) {
     [first, second] = [second, first];

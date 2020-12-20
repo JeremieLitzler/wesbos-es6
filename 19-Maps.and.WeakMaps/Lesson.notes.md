@@ -1,5 +1,9 @@
 # Maps and WeakMaps
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../18-Sets.and.WeakSets/Lesson.notes.md) |
+[View next lesson's notes >](../20-Async.plus.Await/Lesson.notes.md)
+
 ## Maps
 
 On maps, we can use `forEach` and `for..of`.

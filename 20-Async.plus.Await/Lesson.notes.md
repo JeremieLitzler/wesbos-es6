@@ -1,5 +1,9 @@
 # Async + Await flow control
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../19-Maps.and.WeakMaps/Lesson.notes.md) |
+[View next lesson's notes >](../21-New.Future.and.Experimental.Language.Additions/Lesson.notes.md)
+
 ## What does async and await really mean
 
 Why Async? To launch an asynchronous task.

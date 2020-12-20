@@ -1,8 +1,12 @@
 # Template strings (or lirerals)
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../02-Arrow.functions/Lesson.note.md) |
+[View next lesson's notes >](../04-Additional.String.Improvements/Lesson.notes.md)
+
 ## What I learned
 
-- The Tagged Template Literals: [See the example](03%20-%20Template%20Strings/tagged-templates.html)
+- The Tagged Template Literals: [See the example](tagged-templates.html)
 
 ## Point to be aware
 

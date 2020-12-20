@@ -1,5 +1,9 @@
 # Proxies
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../16-Generators/Lesson.notes.md) |
+[View next lesson's notes >](../18-Sets.and.WeakSets/Lesson.notes.md)
+
 They allow to overwrite the default behavior of an object.
 
 > To effectively implement and use an ES6 proxy, you must understand three key terms:

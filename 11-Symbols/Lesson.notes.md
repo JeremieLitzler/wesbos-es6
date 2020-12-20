@@ -1,11 +1,15 @@
 # Symbol
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../10-Promises/Lesson.notes.md) |
+[View next lesson's notes >](../12-Code.Quality.with.ESLint/Lesson.notes.md)
+
 ## Definition
 
 They are unique identifier to avoid naming collision.
 
 ```js
-const mySymbol = Symbol("descriptor");
+const mySymbol = Symbol('descriptor');
 ```
 
 ## When do you use it
@@ -14,9 +18,9 @@ If using a lot of data, it is important to identify uniquely the data. See the e
 
 ```js
 const classRoom = {
-  [Symbol("Mark")]: { grade: 50, gender: "male" },
-  [Symbol("olivia")]: { grade: 80, gender: "female" },
-  [Symbol("olivia")]: { grade: 80, gender: "female" },
+  [Symbol('Mark')]: { grade: 50, gender: 'male' },
+  [Symbol('olivia')]: { grade: 80, gender: 'female' },
+  [Symbol('olivia')]: { grade: 80, gender: 'female' },
 };
 ```
 

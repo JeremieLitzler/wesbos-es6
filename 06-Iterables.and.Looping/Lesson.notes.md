@@ -1,5 +1,9 @@
 # Iterables & Looping
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../05-Destructuring/Lesson.notes.md) |
+[View next lesson's notes >](../07-An.Array.of.Improvements/Lesson.notes.md)
+
 ## for...of
 
 ### Why a new loop

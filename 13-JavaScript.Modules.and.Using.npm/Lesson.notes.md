@@ -1,5 +1,9 @@
 # JavaScript Modules and Using npm
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../12-Code.Quality.with.ESLint/Lesson.notes.md) |
+[View next lesson's notes >](../14-ES6.Tooling/Lesson.notes.md)
+
 ## Introduction `npm`
 
 I have been using `npm` for a while.

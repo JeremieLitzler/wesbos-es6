@@ -1,5 +1,9 @@
 # ES6 Tooling
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../13-JavaScript.Modules.and.Using.npm/Lesson.notes.md) |
+[View next lesson's notes >](../15-Classes/Lesson.notes.md)
+
 ## SystemJS
 
 It is nice to use and showcase the ES6 modules more quickly... or is it?

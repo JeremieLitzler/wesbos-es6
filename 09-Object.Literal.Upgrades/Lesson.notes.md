@@ -1,5 +1,9 @@
 # Object Literal Upgrades
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../08-Say.Hello.to...Spread.and...Rest/Lesson.notes.md) |
+[View next lesson's notes >](../10-Promises/Lesson.notes.md)
+
 ## Property name simplification
 
 ## Function declaration

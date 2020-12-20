@@ -1,5 +1,9 @@
 # ESLint
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../11-Symbols/Lesson.notes.md) |
+[View next lesson's notes >](../13-JavaScript.Modules.and.Using.npm/Lesson.notes.md)
+
 ## Prerequisites
 
 - Have NodeJS

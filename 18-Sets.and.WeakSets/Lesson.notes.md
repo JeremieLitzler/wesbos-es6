@@ -1,5 +1,9 @@
 # Sets and WeakSets
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../17-Proxies/Lesson.notes.md) |
+[View next lesson's notes >](../19-Maps.and.WeakMaps/Lesson.notes.md)
+
 ## Set
 
 The 2 differences with an array are:

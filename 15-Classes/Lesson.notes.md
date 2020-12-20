@@ -1,5 +1,9 @@
 # Classes
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../14-ES6.Tooling/Lesson.notes.md) |
+[View next lesson's notes >](../16-Generators/Lesson.notes.md)
+
 ## Prototypal Inheritance: a Recap
 
 A Prototypal inheritance is the fact that every method available in an object is available to all instances of that object.

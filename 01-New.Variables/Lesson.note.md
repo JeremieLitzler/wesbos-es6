@@ -1,5 +1,8 @@
 # Variables
 
+[< Back to table of content](../README.md) |
+[View next lesson's notes >](../02-Arrow.functions/Lesson.note.md)
+
 ## What are the possible scopes?
 
 - window
@@ -21,7 +24,7 @@ let points = 50;
 let winner = false;
 
 if (points > 40) {
-    let winner = true;
+  let winner = true;
 }
 ```
 
@@ -39,12 +42,12 @@ It depends on your preferences but the leading point of view:
 
 - [from Mathias Bynens](https://mathiasbynens.be/notes/es6-const)
 
->- Use const by default
->- Use let only if rebinding is needed.
->- var should not be ever used in ES6.
+> - Use const by default
+> - Use let only if rebinding is needed.
+> - var should not be ever used in ES6.
 
 - from Kyle Simpson :
 
->- Use var for top-level variables that are shared across many (especially larger) scopes.
->- Use let for localized variables in smaller scopes.
->- Refactor let to const only after some code has to be written, and you're reasonably sure that you've got a case where there shouldn't be variable reassignment.
+> - Use var for top-level variables that are shared across many (especially larger) scopes.
+> - Use let for localized variables in smaller scopes.
+> - Refactor let to const only after some code has to be written, and you're reasonably sure that you've got a case where there shouldn't be variable reassignment.

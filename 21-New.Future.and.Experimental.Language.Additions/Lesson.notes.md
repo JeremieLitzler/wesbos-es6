@@ -1,5 +1,8 @@
 # New Future and Experimental Language Additions
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../20-Async.plus.Await/Lesson.notes.md) |
+
 ## Class properties (aka Class Fields)
 
 As the time of the recording, it wasn't official but the React community was using it heavily.

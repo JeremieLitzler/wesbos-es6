@@ -1,5 +1,9 @@
 # Destructuring
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../04-Additional.String.Improvements/Lesson.notes.md) |
+[View next lesson's notes >](../06-Iterables.and.Looping/Lesson.notes.md)
+
 ## Definition
 
 It allows to extract properties out from an object into their own variable.
@@ -33,7 +37,7 @@ It is using the square brakets `[var1, var2, var3]`.
 The spread operator is useful when you grab some values of the array explicitly but the rest of the values can be retrieved into a sub array:
 
 ```js
-const team = ["Wes", "Harry", "Sarah", "Keegan", "Riker"];
+const team = ['Wes', 'Harry', 'Sarah', 'Keegan', 'Riker'];
 
 const [captain, assistant, ...players] = team; //players is an array equal to ['Sarah', 'Keegan', 'Riker']
 ```

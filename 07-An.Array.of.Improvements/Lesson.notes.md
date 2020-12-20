@@ -1,5 +1,9 @@
 # Array improvements
 
+[< Back to table of content](../README.md) |
+[View previous lesson's notes](../06-Iterables.and.Looping/Lesson.notes.md) |
+[View next lesson's notes >](../08-Say.Hello.to...Spread.and...Rest/Lesson.notes.md)
+
 ## `.from()` and `.of()`
 
 ### `.from()`
